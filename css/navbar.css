@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
+:root {
+    --color-main: #ff3838;
+    --colo-text: #666;
+}
+
+.header {
+    display: flex;
+    height: 60px;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.header .brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .brand i {
+    font-size: 30px;
+    margin-right: 10px;
+    color: var(--color-main)
+}
+
+.header .brand span {
+    font-size: 40px;
+    font-weight: 800;
+    color: var(--colo-text);
+    font-family: 'Dancing Script', cursive;
+}
+
+.header .searchFood {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding-left: 20px;
+    width: 40%;
+    height: 40px;
+    border-radius: 50px;
+}
+
+.header .searchFood input {
+    width: 100%;
+}
+
+.header .searchFood button {
+    margin-right: 4px;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.header .info {
+    display: flex;
+    align-items: center;
+}
+
+.header .info .info__interact {
+    display: flex;
+    align-items: center;
+    margin-right: 30px
+}
+
+.header .info .info__interact i {
+    font-size: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.header .info .info__user {
+    display: flex;
+    align-items: center;
+}
+
+.header .info .info__user img {
+    width: 40px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
