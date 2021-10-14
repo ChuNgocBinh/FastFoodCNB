@@ -36,9 +36,9 @@ export default class Navbar extends BaseComponent {
         $user.className = "info__user"
         let $userName = document.createElement("div");
         $userName.className = "userName"
-        $userName.innerHTML = 'Chu Binh';
+        $userName.innerHTML = this.props.nameUser;
         let $userImg = document.createElement("img")
-        $userImg.src = "https://scontent.fhan2-2.fna.fbcdn.net/v/t1.6435-9/184902041_207216264577384_4695507257604592791_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=09cbfe&_nc_ohc=us1Pxdf2zpUAX-B17EW&_nc_ht=scontent.fhan2-2.fna&oh=9c01fca9f97d680f983bb37450623022&oe=618AC76B";
+        $userImg.src = this.props.imgUser;
         $user.append($userName, $userImg);
 
         $info.append($interact, $user);
